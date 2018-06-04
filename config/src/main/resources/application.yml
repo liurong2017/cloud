@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://qf-javadev-01:8081/nexus/
+          search-paths: spring
+          username: RongLiush
+          password: 258369*lr
+
+

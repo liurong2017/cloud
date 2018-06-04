@@ -1,0 +1,9 @@
+server:
+  port: 8802
+spring:
+  application:
+    name: service1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery01:8800/eureka/

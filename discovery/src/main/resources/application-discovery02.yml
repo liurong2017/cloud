@@ -1,0 +1,13 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: discovery02
+eureka:
+  instance:
+    hostname: discovery02
+  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://discovery01:8800/eureka/

@@ -1,0 +1,11 @@
+server:
+  port: 8810
+spring:
+  application:
+    name: turbine-amqp
+management:
+  port: 8811
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery01:8800/eureka/

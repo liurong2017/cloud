@@ -1,0 +1,24 @@
+server:
+  port: 8812
+spring:
+  application:
+    name: feign-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery01:8800/eureka/
+service1:
+  ribbon:
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 2
+    ConnectTimeout: 2000
+    ReadTimeout: 2000
+    OkToRetryOnAllOperations: true
+logging:
+  level:
+    com:
+      qf:
+        feignconsumer:
+          service:
+            FeignApiServiceConsumer: debug
+            FeignService: debug

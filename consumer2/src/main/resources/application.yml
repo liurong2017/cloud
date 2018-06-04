@@ -1,0 +1,9 @@
+server:
+  port: 8808
+spring:
+  application:
+    name: consumer2
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery01:8800/eureka/

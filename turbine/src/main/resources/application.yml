@@ -1,0 +1,15 @@
+server:
+  port: 8806
+spring:
+  application:
+    name: turbine
+management:
+  port: 8807
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery01:8800/eureka/
+turbine:
+  app-config: consumer
+  cluster-name-expression: new String('default')
+  combine-host-port: true
